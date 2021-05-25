@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="background vh-100">
+    <div class="text-center">
+      <main class="form-signin centered background-1 shadow-lg col-12">
+        <form>
+          <h1 class="h3 mb-4 fw-normal">Please register in</h1>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Username"
+              #userEmail
+              required
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              #userPassword
+              required
+            />
+            <label for="floatingInput">Password</label>
+          </div>
+          <button
+            class="w-100 btn btn-lg btn-primary mt-5"
+            routerLinkActive="router-link-active"
+            type="submit"
+            value="Sign up"
+            (click)="register(userEmail.value, userPassword.value)"
+            [routerLink]="['/login']"
+          >
+            Register
+          </button>
+        </form>
+      </main>
+    </div>
+  </div>
+</div>

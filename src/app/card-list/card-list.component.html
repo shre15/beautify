@@ -1,0 +1,25 @@
+<div class="row card-list-container">
+  <div
+    class="col-12 col-sm-6 py-2 col-md-4 col-lg-3 col-xl-4"
+    *ngFor="let card of cardList"
+  >
+    <div class="card h-100 p-2 shadow-lg">
+      <div class="img-container img-hover-zoom">
+        <img
+          [src]="card.img"
+          alt="Card image cap"
+          class="card-image-container card-img-top w-100 h-100 img-fluid"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">{{ card.description }}</p>
+      </div>
+      <div>
+        <button class="btn ms-3 mb-2 btn-dark rounded-pil">
+          {{ card.buttonText }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

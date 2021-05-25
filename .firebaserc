@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "beautfy-f47e0": {
+      "hosting": {
+        "beautfy": [
+          "beautfy-f47e0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "beautfy-f47e0"
+  }
+}
